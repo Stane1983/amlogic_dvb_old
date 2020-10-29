@@ -1,13 +1,8 @@
 #
-# Meson dvb driver configuration
+# vs_frontend configuration
 #
-
-menu "Meson dvb drivers"
-
-config MESON_DVB
-	tristate "Meson dvb drivers"
-	default n
-	select DVB_CORE
-	help
-		Select to enable Meson dvb drivers.
-endmenu
+config VS_FRONTEND
+        tristate "vs demod driver"
+        default n
+        help
+        Select to enable vs_frontend demod driver.
